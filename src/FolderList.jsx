@@ -11,7 +11,7 @@ import { Typography } from "@mui/material";
 export default function FolderList() {
   return (
     <List sx={{ width: "100%", bgcolor: "background.paper" }}>
-      <ListItem secondaryAction={<Typography variant="h6">₺32.8</Typography>}>
+      <ListItem secondaryAction={<Typography variant="h6">₺32.9</Typography>}>
         <ListItemAvatar>
           <Avatar sx={{ bgcolor: "#424242" }}>
             <CurrencyLiraIcon />
@@ -19,7 +19,7 @@ export default function FolderList() {
         </ListItemAvatar>
         <ListItemText primary="USDT/TRY" secondary="Tether to Turkish lira" />
       </ListItem>
-      <ListItem secondaryAction={<Typography variant="h6">$63.9K</Typography>}>
+      <ListItem secondaryAction={<Typography variant="h6">$63K</Typography>}>
         <ListItemAvatar>
           <Avatar sx={{ bgcolor: "#424242" }}>
             <CurrencyBitcoinIcon />
