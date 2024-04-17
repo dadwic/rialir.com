@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import LinearProgress from "@mui/material/LinearProgress";
 import MenuIcon from "@mui/icons-material/Lock";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 export default function ButtonAppBar() {
   const [loading, setLoading] = React.useState(true);
@@ -37,6 +38,16 @@ export default function ButtonAppBar() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             isturkiye.com
           </Typography>
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            onClick={() =>
+              alert("The shop is currently not available in your country.")
+            }
+          >
+            <ShoppingCartIcon />
+          </IconButton>
         </Toolbar>
       </AppBar>
     </Box>
