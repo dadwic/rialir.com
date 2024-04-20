@@ -10,8 +10,8 @@ function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
       {`© ${new Date().getFullYear()} `}
-      <Link color="inherit" href="https://www.isturkiye.com/">
-        İşTürkiye
+      <Link color="inherit" href={`https://${window.location.host}/`}>
+        {window.location.host}
       </Link>
     </Typography>
   );
